@@ -4,6 +4,7 @@ body{
     align-items: center;
   }
   canvas{
-    height: 800px;
-    width: 1000px;
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
   }
