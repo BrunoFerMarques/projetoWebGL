@@ -126,7 +126,10 @@ function ambientLight() {
 
 
 function puntualLight() {
-  const lightPositions =[[1,1,1], [-1,-1,-1]] // Posições das luzes
+  const lightPositions =[
+    1,1,1, 
+    1,-1,-1,
+  ] // Posições das luzes
 
   
   const lightColors = [1.0, 0.9, 0.8] // Cores das luzes
