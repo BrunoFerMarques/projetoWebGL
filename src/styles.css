@@ -2,9 +2,11 @@ body{
     margin: 0;
     justify-items: center;
     align-items: center;
-  }
-  canvas{
-    height: 500px;
-    width: 500px;
-    border: 1px solid black;
-  }
+    background: rgb(6, 0, 14);
+    color: white;
+}
+canvas{
+  height: 500px;
+  width: 500px;
+  border: 1px solid white;
+}
