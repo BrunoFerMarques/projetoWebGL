@@ -15,11 +15,11 @@ export const venusPosition   = [10, 0, 10];
 
 export function initPlanets() {
   textures = {
-    sun:     loadTexture('../public/textures/2k_sun.jpg'),
-    mercury: loadTexture('../public/textures/2k_mercury.jpg'),
-    venus:   loadTexture('../public/textures/2k_venus_surface.jpg'),
+    sun:     loadTexture('./public/textures/2k_sun.jpg'),
+    mercury: loadTexture('./public/textures/2k_mercury.jpg'),
+    venus:   loadTexture('./public/textures/2k_venus_surface.jpg'),
   };
-  backgroundTexture = loadTexture('../public/textures/2k_stars_milky_way.jpg');
+  backgroundTexture = loadTexture('./public/textures/2k_stars_milky_way.jpg');
 }
 
 export function resetPlanets() {

@@ -6,11 +6,11 @@ let textures;
 
 export function initSpaceships() {
   textures = {
-    metalWorned:     loadTexture('../public/textures/metalpreview.png'),
-    greyMetal:       loadTexture('../public/textures/metalgrey.jpg'),
-    greyMetalPolish: loadTexture('../public/textures/metalgreypolish.png'),
-    redMetal:        loadTexture('../public/textures/redMetal.jpg'),
-    glass:           loadTexture('../public/textures/windowpane.png'),
+    metalWorned:     loadTexture('./public/textures/metalpreview.png'),
+    greyMetal:       loadTexture('./public/textures/metalgrey.jpg'),
+    greyMetalPolish: loadTexture('./public/textures/metalgreypolish.png'),
+    redMetal:        loadTexture('./public/textures/redmetal.jpg'),
+    glass:           loadTexture('./public/textures/windowpane.png'),
   };
 }
 

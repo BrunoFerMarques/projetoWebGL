@@ -9,7 +9,7 @@ export let ringPositions = [];
 export let ringCounter   = 0;
 
 export function initRings() {
-  ringTexture = loadTexture('../public/textures/2k_saturn_ring_alpha.png');
+  ringTexture = loadTexture('./public/textures/2k_saturn_ring_alpha.png');
 }
 
 export function resetRings() {
