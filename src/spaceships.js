@@ -4,13 +4,16 @@ import { getAircraftMatrix } from './aircraft.js';
 
 let textures;
 
+// import.meta.url é src/spaceships.js → ../public/textures/ = public/textures/ na raiz
+const _tex = new URL('../public/textures/', import.meta.url).href;
+
 export function initSpaceships() {
   textures = {
-    metalWorned:     loadTexture('./public/textures/metalpreview.png'),
-    greyMetal:       loadTexture('./public/textures/metalgrey.jpg'),
-    greyMetalPolish: loadTexture('./public/textures/metalgreypolish.png'),
-    redMetal:        loadTexture('./public/textures/redmetal.jpg'),
-    glass:           loadTexture('./public/textures/windowpane.png'),
+    metalWorned:     loadTexture(_tex + 'metalpreview.png'),
+    greyMetal:       loadTexture(_tex + 'metalgrey.jpg'),
+    greyMetalPolish: loadTexture(_tex + 'metalgreypolish.png'),
+    redMetal:        loadTexture(_tex + 'redmetal.jpg'),
+    glass:           loadTexture(_tex + 'windowpane.png'),
   };
 }
 

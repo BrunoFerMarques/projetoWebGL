@@ -8,8 +8,11 @@ let thetaRings = 0;
 export let ringPositions = [];
 export let ringCounter   = 0;
 
+// import.meta.url é src/rings.js → ../public/textures/ = public/textures/ na raiz
+const _tex = new URL('../public/textures/', import.meta.url).href;
+
 export function initRings() {
-  ringTexture = loadTexture('./public/textures/2k_saturn_ring_alpha.png');
+  ringTexture = loadTexture(_tex + '2k_saturn_ring_alpha.png');
 }
 
 export function resetRings() {

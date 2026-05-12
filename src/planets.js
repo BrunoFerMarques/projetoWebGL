@@ -13,13 +13,16 @@ export const sunPosition     = [0, 0, 0];
 export const mercuryPosition = [20, 0, 20];
 export const venusPosition   = [10, 0, 10];
 
+// import.meta.url é src/planets.js → ../public/textures/ = public/textures/ na raiz
+const _tex = new URL('../public/textures/', import.meta.url).href;
+
 export function initPlanets() {
   textures = {
-    sun:     loadTexture('./public/textures/2k_sun.jpg'),
-    mercury: loadTexture('./public/textures/2k_mercury.jpg'),
-    venus:   loadTexture('./public/textures/2k_venus_surface.jpg'),
+    sun:     loadTexture(_tex + '2k_sun.jpg'),
+    mercury: loadTexture(_tex + '2k_mercury.jpg'),
+    venus:   loadTexture(_tex + '2k_venus_surface.jpg'),
   };
-  backgroundTexture = loadTexture('./public/textures/2k_stars_milky_way.jpg');
+  backgroundTexture = loadTexture(_tex + '2k_stars_milky_way.jpg');
 }
 
 export function resetPlanets() {
